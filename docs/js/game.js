@@ -74,6 +74,7 @@ class Game {
     this.timerIntervall = setInterval(() => {
         this.timer -= 1;
         document.getElementById("timeRemaining").innerText = `${this.timer}`;
+<<<<<<< HEAD
         if (this.timer <= 10){
             document.getElementById('timeRemaining').style.color = 'red';
         } else {
@@ -81,6 +82,15 @@ class Game {
         }
 
         if (this.timer === 0) {
+=======
+
+        if (this.timer <= 10){
+            document.getElementById('timeRemaining').style.color = 'red';
+        } else {
+            document.getElementById('timeRemaining').style.color = 'white';
+        }
+        if (this.timer <= 0) {
+>>>>>>> refs/remotes/origin/main
             clearInterval();
             this.endGameVictory();
         }
