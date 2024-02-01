@@ -74,13 +74,13 @@ class Game {
     this.timerIntervall = setInterval(() => {
         this.timer -= 1;
         document.getElementById("timeRemaining").innerText = `${this.timer}`;
-
         if (this.timer <= 10){
             document.getElementById('timeRemaining').style.color = 'red';
         } else {
             document.getElementById('timeRemaining').style.color = 'white';
         }
-        if (this.timer <= 0) {
+
+        if (this.timer === 0) {
             clearInterval();
             this.endGameVictory();
         }
@@ -119,7 +119,7 @@ class Game {
             const obstacle=this.obstacles[i];
             if (this.score >= 80) {                             // Hard
                 obstacle.move(10); // speed in px
-            } else if (this.score < 80 && this.score > 25) {    // Medium
+            } else if (this.score > 25) {    // Medium
                 obstacle.move(6); // speed in px
             } else {                                            // Easy - start
                 obstacle.move(4); // speed in px

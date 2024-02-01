@@ -8,7 +8,6 @@ body {
   display:block;
   background-position: center;
 }
-
 #game-intro {
   padding: 20px 0px;
 }
@@ -59,28 +58,22 @@ body {
 .arrows-img {
   width: 150px;
 }
-
 #instructions img{
   width:150px;
 }
-
 #instructions {
   display: none;
 }
-
 #stats {
   position: absolute;
   top: 20px;
   right: 20px;
   color: white;
   font-family: "Retro Gaming", sans-serif;
-  
 }
-
 #stats h2 {
   margin-bottom: 10px;
 }
-
 #timeRemaining {
   position: absolute;
   bottom: 20px;
@@ -88,25 +81,11 @@ body {
   transform: translateX(-50%);
   color: white;
   font-family: "Retro Gaming", sans-serif;
-  
 }
-
-#remainingTime {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-family: "Retro Gaming", sans-serif;
-  
-}
-
-
 .coin img {
   height: 40px;
   width: 40px;
 }
-
 .coin {
   display: flex;
   flex-wrap: wrap;
@@ -114,7 +93,6 @@ body {
   justify-content: center;
   padding-left: 30px;
 }
-
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -131,16 +109,23 @@ body {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 .button:hover {
   background-color: #fff;
   color:rgb(207, 34, 15);
   border: 2px solid rgb(207, 34, 15);
   box-shadow: 5px 5px 0px rgb(207, 34, 15);
 }
-
 .button:active {
-  background-color: #fcf414;
+  background-color: #FCF414;
   box-shadow: none;
   transform: translateY(4px);
 }
+
+
+
+
+
+
+
+
+
