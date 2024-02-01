@@ -1,0 +1,117 @@
+body {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  text-align: center;
+  color:white;
+  font-family: "Retro Gaming", sans-serif;
+  display:block;
+  background-position: center;
+}
+
+#game-intro {
+  padding: 20px 0px;
+}
+#game-container {
+  display: flex;
+  width: 100vw;
+  padding: 20px 0px;
+  justify-content: center;
+}
+#game-screen{
+  display:none;
+  align-content:center;
+  padding:20px 0px;
+  overflow:hidde;
+  position:relative;
+  background-image:url(../images/City1.png);
+  background-size:cover;
+  animation: slide 90s linear infinite;
+}
+@keyframes slide {
+  0% {
+    background-position: 15000px 0px;
+  }
+  95% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 10px 0px;
+  }
+}
+#game-end {
+  display: none;
+}
+#game-over{
+  display:none;
+  align-content: center;
+}
+#game-victory{
+  display: none;
+}
+.game-intro p {
+  font-size: 18px;
+  font-family: "Verdana";
+}
+.logo-img {
+  width: 350px;
+}
+.arrows-img {
+  width: 150px;
+}
+
+#instructions img{
+  width:150px;
+}
+
+#instructions {
+  display: none;
+}
+
+#stats {
+  display: none;
+}
+
+
+.coin img {
+  height: 40px;
+  width: 40px;
+}
+
+.coin {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: "Retro Gaming";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(207, 34, 15);
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #fff;
+  color:rgb(207, 34, 15);
+  border: 2px solid rgb(207, 34, 15);
+  box-shadow: 5px 5px 0px rgb(207, 34, 15);
+}
+
+.button:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
+}

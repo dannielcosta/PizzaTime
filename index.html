@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Time</title>
+    <link rel="stylesheet" href="./docs/styles/styles.css"/>
+    <style>
+      @import url(https://db.onlinewebfonts.com/c/4c19fc875e7ba1e6831129de3ab5ac0b?family=Retro+Gaming);;
+      </style>
+</head>
+<body background="./docs/images/background1.png">
+    <main>
+<!--------------------------------------------------INTRO SCREEN---------------------------------------------------------->
+        <div id="game-intro">
+            <img src="./docs/images/img-logo.png"/>
+            <br>
+            <button id="play" class="button">Let's play!</button>
+            <br>
+        </div>
+<!--------------------------------------------------INSTRUCTIONS SCREEN--------------------------------------------------->
+        <div id="instructions">
+          <h1>Instructions</h1>
+          <br>
+          <h3>You have 30 seconds to catch the most pizza slices that you can.<br>But remember!<br>You have to avoid the pineapples because you already know that splinter doesn't like pineapple on pizza.<br>Hurry up!!</h3>
+          <p>Hint: If you want to beat the HighScore you need to catch the clocks</p>
+          <br>
+          <img src="./docs/images/arrow-instr.png"/>
+          <p>LEFT AND RIGHT</p>
+          <br>
+          <img src="./docs/images/space-instr.png"/>
+          <p>JUMP</p>
+          <button id="start-button" class="button">Start Game</button>
+          <audio id="soundtrack" src="./docs/sounds/theme-song-intro.mp3"></audio>
+        </div>
+        
+
+<!--------------------------------------------------GAME SCREEN----------------------------------------------------------->
+        
+        <div id="game-container">
+          <div id="stats">
+            <h2>Stats</h2>
+            <p>Score: <span id="score">0</span></p>
+            <p>Lives: <span id="lives">3</span></p>
+            <div id="timeRemaining">Remaining Time: <span>30</span></div>
+          </div>
+          <div id="game-screen"></div>
+        </div>
+  
+<!--------------------------------------------------END SCREEN----------------------------------------------------------->
+        <div id="game-end"></div>
+        <div id="game-over">
+          <h1>GAME OVER</h1><br>
+          <div class = "coin">
+          <h2 style="color:yellow">INSERT COIN</h2><img src="./docs/images/coin.gif" alt="coin image">
+        </div>
+          <img src="./docs/images/splinter-pineapple.png" alt="Splinter image"><br>
+          <button id="restart-button" class="button">Restart</button>
+          <audio id="game-over-audio" src="./docs/sounds/game-over.mp3"></audio>
+        </div>
+        <div id ="game-victory">
+          <img src="./docs/images/turtles-eating.png" alt="Turtles eating"><br>
+          <button id="restart-button" class="button">Restart</button>
+          <audio id="victory-audio" src="./docs/sounds/victory.mp3"></audio>
+        </div>
+      </main>
+
+<!--------------------------------------------------SCRIPTS-------------------------------------------------------------->
+      <script type="text/javascript" src="./docs/js/extra-timer.js"></script>
+      <script type="text/javascript" src="./docs/js/extra-point.js"></script>
+      <script type="text/javascript" src="./docs/js/point.js"></script>
+      <script type="text/javascript" src="./docs/js/player.js"></script>
+      <script type="text/javascript" src="./docs/js/obstacle.js"></script>
+      <script type="text/javascript" src="./docs/js/game.js"></script>
+      <script type="text/javascript" src="./docs/js/script.js"></script>
+
+  
+    </body>
+</html>
