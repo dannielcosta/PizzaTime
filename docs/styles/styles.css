@@ -70,20 +70,10 @@ body {
   right: 20px;
   color: white;
   font-family: "Retro Gaming", sans-serif;
-<<<<<<< HEAD
 }
 #stats h2 {
   margin-bottom: 10px;
 }
-=======
-  
-}
-
-#stats h2 {
-  margin-bottom: 10px;
-}
-
->>>>>>> refs/remotes/origin/main
 #timeRemaining {
   position: absolute;
   bottom: 20px;
@@ -91,20 +81,6 @@ body {
   transform: translateX(-50%);
   color: white;
   font-family: "Retro Gaming", sans-serif;
-<<<<<<< HEAD
-=======
-  
-}
-
-#remainingTime {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-family: "Retro Gaming", sans-serif;
-  
->>>>>>> refs/remotes/origin/main
 }
 .coin img {
   height: 40px;
