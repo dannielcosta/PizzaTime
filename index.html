@@ -22,7 +22,7 @@
         <div id="instructions">
           <h1>Instructions</h1>
           <br>
-          <h3>You have 30 seconds to catch the most pizza slices that you can.<br>But remember!<br>You have to avoid the pineapples because you already know that splinter doesn't like pineapple on pizza.<br>Hurry up!!</h3>
+          <h3>You have 30 seconds to catch the most pizza slices that you can.<br>But remember!<br>You have to avoid the pineapples because you already know that Sensei Splinter doesn't like pineapple on pizza.<br>Hurry up!!</h3>
           <p>Hint: If you want to beat the HighScore you need to catch the clocks</p>
           <br>
           <img src="./docs/images/arrow-instr.png"/>
@@ -37,16 +37,15 @@
 
 <!--------------------------------------------------GAME SCREEN----------------------------------------------------------->
         
-        <div id="game-container">
+      <div id="game-container">
+        <div id="game-screen">
           <div id="stats">
-            <h2>Stats</h2>
-            <p>Score: <span id="score">0</span></p>
-            <p>Lives: <span id="lives">3</span></p>
-            <div id="timeRemaining">Remaining Time: <span>30</span></div>
+            <p>SCORE <span id="score">0</span></p>
+            <p>LIVES <span id="lives">3</span></p>
           </div>
-          <div id="game-screen"></div>
+          <div><span id="timeRemaining">Remaining Time: 30</span></div>
         </div>
-  
+      </div>
 <!--------------------------------------------------END SCREEN----------------------------------------------------------->
         <div id="game-end"></div>
         <div id="game-over">
